@@ -1,7 +1,9 @@
 # Projet-Docker
 C'est un projet qui consiste à installer un Docker sur une VM.
 Ce docker devait ensuite être constitué de trois dockerfile: __client, serveur et firewall__ et d'un __docker-compose__ permettant l'execution.
+
 ## Préparation de l'installation
+
 Dans un premier temps nous allons installer les paquets pré-requis:
 
 ` sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common `
@@ -39,6 +41,7 @@ Nous avons créer un dossier serveur, puis dans celui-ci nous avons mis trois fi
 ![image](https://user-images.githubusercontent.com/82390719/169857575-d77b2e16-f281-4696-9904-3157a272084b.png)
 
 #### dockerfile
+
 ![image](https://user-images.githubusercontent.com/82390719/169857801-a25f13f1-ffc7-4f65-a614-927547aa869e.png)
 
 #### index.html
@@ -48,9 +51,11 @@ Nous avons créer un dossier serveur, puis dans celui-ci nous avons mis trois fi
 ## Creation Dockerfile (Client)
 
 Dans notre dossier client, nous avons mis deux fichiers:
+
 ![image](https://user-images.githubusercontent.com/82390719/169858401-422054f9-0744-42da-b9d3-d47283376b29.png)
 
 #### client.py
+
 ![image](https://user-images.githubusercontent.com/82390719/169858558-4e7df9fa-3b0c-4863-9c86-f380a81a8a8b.png)
 
 #### dockerfile
@@ -58,10 +63,12 @@ Dans notre dossier client, nous avons mis deux fichiers:
 ![image](https://user-images.githubusercontent.com/82390719/169858723-522c7c38-8d36-4203-89e3-e80cd481297b.png)
 
 ## Creation Dockerfile (Firewall)
+
 Nous avons créer deux fichiers, dont un contenant les configurations du Firewall, et l'autre étant le dockerfile.
 ![image](https://user-images.githubusercontent.com/82390719/169870722-70c16b66-45e5-4a63-9495-9ae1de7f4350.png)
 
 #### fw.sh
+
 ![image](https://user-images.githubusercontent.com/82390719/169870216-89fff627-b1c8-462d-b98b-25890681d9d6.png)
 
 #### dockerfile
@@ -71,6 +78,7 @@ Nous avons créer deux fichiers, dont un contenant les configurations du Firewal
 ## Docker-Compose
 
 Nous allons maintenant éditer notre __'docker-compose.yml__ les commandes:
+
 ![image](https://user-images.githubusercontent.com/82390719/169867663-fd190065-a3cc-4157-a049-0b8496b9d19c.png)
 
 
